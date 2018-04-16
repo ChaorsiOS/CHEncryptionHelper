@@ -1,0 +1,2 @@
+# CHEncryptionHelper
+一个基于AES和RSA的混合加密机制，用于通讯中的数据加密和接口加密
