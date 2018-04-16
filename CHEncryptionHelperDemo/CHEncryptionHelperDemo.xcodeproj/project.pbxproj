@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAEA0EDB1DE885D300B5BAD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEA0EDA1DE885D300B5BAD9 /* main.m */; };
+		FAEA0EE41DE885D300B5BAD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEA0EE21DE885D300B5BAD9 /* Main.storyboard */; };
+		FAEA0EE61DE885D300B5BAD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAEA0EE51DE885D300B5BAD9 /* Assets.xcassets */; };
+		FAEA0EE91DE885D300B5BAD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEA0EE71DE885D300B5BAD9 /* LaunchScreen.storyboard */; };
+		FAEA0EF41DE885D300B5BAD9 /* CHEncryptionHelperDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEA0EF31DE885D300B5BAD9 /* CHEncryptionHelperDemoTests.m */; };
+		FAEA0EFF1DE885D300B5BAD9 /* CHEncryptionHelperDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEA0EFE1DE885D300B5BAD9 /* CHEncryptionHelperDemoUITests.m */; };
+		FAEA0F111DE8860400B5BAD9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEA0F0C1DE8860400B5BAD9 /* ViewController.m */; };
+		FAEA0F121DE8860400B5BAD9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEA0F0E1DE8860400B5BAD9 /* AppDelegate.m */; };
+		FAEA0F131DE8860400B5BAD9 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAEA0F101DE8860400B5BAD9 /* ViewController.xib */; };
+		FAEA0F1F1DE8879700B5BAD9 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEA0F171DE8879700B5BAD9 /* GTMBase64.m */; };
+		FAEA0F281DE8890700B5BAD9 /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEA0F241DE8890700B5BAD9 /* NSData+AES.m */; };
+		FAEA0F291DE8890700B5BAD9 /* NSData+AES256.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEA0F251DE8890700B5BAD9 /* NSData+AES256.m */; };
+		FAEA0F2C1DE8892B00B5BAD9 /* CHAESEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEA0F2B1DE8892B00B5BAD9 /* CHAESEncryption.m */; };
+		FAEA0F2F1DE8894E00B5BAD9 /* CHRSAEncyyption.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEA0F2E1DE8894E00B5BAD9 /* CHRSAEncyyption.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAEA0EF01DE885D300B5BAD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAEA0ECE1DE885D300B5BAD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAEA0ED51DE885D300B5BAD9;
+			remoteInfo = CHEncryptionHelperDemo;
+		};
+		FAEA0EFB1DE885D300B5BAD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAEA0ECE1DE885D300B5BAD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAEA0ED51DE885D300B5BAD9;
+			remoteInfo = CHEncryptionHelperDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FAEA0ED61DE885D300B5BAD9 /* CHEncryptionHelperDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CHEncryptionHelperDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAEA0EDA1DE885D300B5BAD9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FAEA0EE31DE885D300B5BAD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAEA0EE51DE885D300B5BAD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAEA0EE81DE885D300B5BAD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAEA0EEA1DE885D300B5BAD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAEA0EEF1DE885D300B5BAD9 /* CHEncryptionHelperDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CHEncryptionHelperDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAEA0EF31DE885D300B5BAD9 /* CHEncryptionHelperDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHEncryptionHelperDemoTests.m; sourceTree = "<group>"; };
+		FAEA0EF51DE885D300B5BAD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAEA0EFA1DE885D300B5BAD9 /* CHEncryptionHelperDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CHEncryptionHelperDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAEA0EFE1DE885D300B5BAD9 /* CHEncryptionHelperDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHEncryptionHelperDemoUITests.m; sourceTree = "<group>"; };
+		FAEA0F001DE885D300B5BAD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAEA0F0C1DE8860400B5BAD9 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FAEA0F0D1DE8860400B5BAD9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FAEA0F0E1DE8860400B5BAD9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FAEA0F0F1DE8860400B5BAD9 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FAEA0F101DE8860400B5BAD9 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		FAEA0F161DE8879700B5BAD9 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		FAEA0F171DE8879700B5BAD9 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		FAEA0F181DE8879700B5BAD9 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		FAEA0F241DE8890700B5BAD9 /* NSData+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES.m"; sourceTree = "<group>"; };
+		FAEA0F251DE8890700B5BAD9 /* NSData+AES256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES256.m"; sourceTree = "<group>"; };
+		FAEA0F261DE8890700B5BAD9 /* NSData+AES256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES256.h"; sourceTree = "<group>"; };
+		FAEA0F271DE8890700B5BAD9 /* NSData+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES.h"; sourceTree = "<group>"; };
+		FAEA0F2A1DE8892B00B5BAD9 /* CHAESEncryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHAESEncryption.h; sourceTree = "<group>"; };
+		FAEA0F2B1DE8892B00B5BAD9 /* CHAESEncryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHAESEncryption.m; sourceTree = "<group>"; };
+		FAEA0F2D1DE8894E00B5BAD9 /* CHRSAEncyyption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHRSAEncyyption.h; sourceTree = "<group>"; };
+		FAEA0F2E1DE8894E00B5BAD9 /* CHRSAEncyyption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHRSAEncyyption.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAEA0ED31DE885D300B5BAD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAEA0EEC1DE885D300B5BAD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAEA0EF71DE885D300B5BAD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAEA0ECD1DE885D300B5BAD9 = {
+			isa = PBXGroup;
+			children = (
+				FAEA0ED81DE885D300B5BAD9 /* CHEncryptionHelperDemo */,
+				FAEA0EF21DE885D300B5BAD9 /* CHEncryptionHelperDemoTests */,
+				FAEA0EFD1DE885D300B5BAD9 /* CHEncryptionHelperDemoUITests */,
+				FAEA0ED71DE885D300B5BAD9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAEA0ED71DE885D300B5BAD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAEA0ED61DE885D300B5BAD9 /* CHEncryptionHelperDemo.app */,
+				FAEA0EEF1DE885D300B5BAD9 /* CHEncryptionHelperDemoTests.xctest */,
+				FAEA0EFA1DE885D300B5BAD9 /* CHEncryptionHelperDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAEA0ED81DE885D300B5BAD9 /* CHEncryptionHelperDemo */ = {
+			isa = PBXGroup;
+			children = (
+				FAEA0F141DE8870C00B5BAD9 /* CHEncryptionHelper */,
+				FAEA0F0C1DE8860400B5BAD9 /* ViewController.m */,
+				FAEA0F0D1DE8860400B5BAD9 /* AppDelegate.h */,
+				FAEA0F0E1DE8860400B5BAD9 /* AppDelegate.m */,
+				FAEA0F0F1DE8860400B5BAD9 /* ViewController.h */,
+				FAEA0F101DE8860400B5BAD9 /* ViewController.xib */,
+				FAEA0EE21DE885D300B5BAD9 /* Main.storyboard */,
+				FAEA0EE51DE885D300B5BAD9 /* Assets.xcassets */,
+				FAEA0EE71DE885D300B5BAD9 /* LaunchScreen.storyboard */,
+				FAEA0EEA1DE885D300B5BAD9 /* Info.plist */,
+				FAEA0ED91DE885D300B5BAD9 /* Supporting Files */,
+			);
+			path = CHEncryptionHelperDemo;
+			sourceTree = "<group>";
+		};
+		FAEA0ED91DE885D300B5BAD9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAEA0EDA1DE885D300B5BAD9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAEA0EF21DE885D300B5BAD9 /* CHEncryptionHelperDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAEA0EF31DE885D300B5BAD9 /* CHEncryptionHelperDemoTests.m */,
+				FAEA0EF51DE885D300B5BAD9 /* Info.plist */,
+			);
+			path = CHEncryptionHelperDemoTests;
+			sourceTree = "<group>";
+		};
+		FAEA0EFD1DE885D300B5BAD9 /* CHEncryptionHelperDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAEA0EFE1DE885D300B5BAD9 /* CHEncryptionHelperDemoUITests.m */,
+				FAEA0F001DE885D300B5BAD9 /* Info.plist */,
+			);
+			path = CHEncryptionHelperDemoUITests;
+			sourceTree = "<group>";
+		};
+		FAEA0F141DE8870C00B5BAD9 /* CHEncryptionHelper */ = {
+			isa = PBXGroup;
+			children = (
+				FAEA0F231DE888A100B5BAD9 /* AES */,
+				FAEA0F151DE8879700B5BAD9 /* GTMBase64 */,
+				FAEA0F2A1DE8892B00B5BAD9 /* CHAESEncryption.h */,
+				FAEA0F2B1DE8892B00B5BAD9 /* CHAESEncryption.m */,
+				FAEA0F2D1DE8894E00B5BAD9 /* CHRSAEncyyption.h */,
+				FAEA0F2E1DE8894E00B5BAD9 /* CHRSAEncyyption.m */,
+			);
+			path = CHEncryptionHelper;
+			sourceTree = "<group>";
+		};
+		FAEA0F151DE8879700B5BAD9 /* GTMBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				FAEA0F161DE8879700B5BAD9 /* GTMBase64.h */,
+				FAEA0F171DE8879700B5BAD9 /* GTMBase64.m */,
+				FAEA0F181DE8879700B5BAD9 /* GTMDefines.h */,
+			);
+			path = GTMBase64;
+			sourceTree = "<group>";
+		};
+		FAEA0F231DE888A100B5BAD9 /* AES */ = {
+			isa = PBXGroup;
+			children = (
+				FAEA0F261DE8890700B5BAD9 /* NSData+AES256.h */,
+				FAEA0F251DE8890700B5BAD9 /* NSData+AES256.m */,
+				FAEA0F271DE8890700B5BAD9 /* NSData+AES.h */,
+				FAEA0F241DE8890700B5BAD9 /* NSData+AES.m */,
+			);
+			path = AES;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAEA0ED51DE885D300B5BAD9 /* CHEncryptionHelperDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAEA0F031DE885D300B5BAD9 /* Build configuration list for PBXNativeTarget "CHEncryptionHelperDemo" */;
+			buildPhases = (
+				FAEA0ED21DE885D300B5BAD9 /* Sources */,
+				FAEA0ED31DE885D300B5BAD9 /* Frameworks */,
+				FAEA0ED41DE885D300B5BAD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CHEncryptionHelperDemo;
+			productName = CHEncryptionHelperDemo;
+			productReference = FAEA0ED61DE885D300B5BAD9 /* CHEncryptionHelperDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAEA0EEE1DE885D300B5BAD9 /* CHEncryptionHelperDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAEA0F061DE885D300B5BAD9 /* Build configuration list for PBXNativeTarget "CHEncryptionHelperDemoTests" */;
+			buildPhases = (
+				FAEA0EEB1DE885D300B5BAD9 /* Sources */,
+				FAEA0EEC1DE885D300B5BAD9 /* Frameworks */,
+				FAEA0EED1DE885D300B5BAD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAEA0EF11DE885D300B5BAD9 /* PBXTargetDependency */,
+			);
+			name = CHEncryptionHelperDemoTests;
+			productName = CHEncryptionHelperDemoTests;
+			productReference = FAEA0EEF1DE885D300B5BAD9 /* CHEncryptionHelperDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAEA0EF91DE885D300B5BAD9 /* CHEncryptionHelperDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAEA0F091DE885D300B5BAD9 /* Build configuration list for PBXNativeTarget "CHEncryptionHelperDemoUITests" */;
+			buildPhases = (
+				FAEA0EF61DE885D300B5BAD9 /* Sources */,
+				FAEA0EF71DE885D300B5BAD9 /* Frameworks */,
+				FAEA0EF81DE885D300B5BAD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAEA0EFC1DE885D300B5BAD9 /* PBXTargetDependency */,
+			);
+			name = CHEncryptionHelperDemoUITests;
+			productName = CHEncryptionHelperDemoUITests;
+			productReference = FAEA0EFA1DE885D300B5BAD9 /* CHEncryptionHelperDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAEA0ECE1DE885D300B5BAD9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = chaors;
+				TargetAttributes = {
+					FAEA0ED51DE885D300B5BAD9 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = KYKFAMJ9BL;
+					};
+					FAEA0EEE1DE885D300B5BAD9 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = KYKFAMJ9BL;
+						TestTargetID = FAEA0ED51DE885D300B5BAD9;
+					};
+					FAEA0EF91DE885D300B5BAD9 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = KYKFAMJ9BL;
+						TestTargetID = FAEA0ED51DE885D300B5BAD9;
+					};
+				};
+			};
+			buildConfigurationList = FAEA0ED11DE885D300B5BAD9 /* Build configuration list for PBXProject "CHEncryptionHelperDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAEA0ECD1DE885D300B5BAD9;
+			productRefGroup = FAEA0ED71DE885D300B5BAD9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAEA0ED51DE885D300B5BAD9 /* CHEncryptionHelperDemo */,
+				FAEA0EEE1DE885D300B5BAD9 /* CHEncryptionHelperDemoTests */,
+				FAEA0EF91DE885D300B5BAD9 /* CHEncryptionHelperDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAEA0ED41DE885D300B5BAD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAEA0EE91DE885D300B5BAD9 /* LaunchScreen.storyboard in Resources */,
+				FAEA0EE61DE885D300B5BAD9 /* Assets.xcassets in Resources */,
+				FAEA0F131DE8860400B5BAD9 /* ViewController.xib in Resources */,
+				FAEA0EE41DE885D300B5BAD9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAEA0EED1DE885D300B5BAD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAEA0EF81DE885D300B5BAD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAEA0ED21DE885D300B5BAD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAEA0F281DE8890700B5BAD9 /* NSData+AES.m in Sources */,
+				FAEA0F111DE8860400B5BAD9 /* ViewController.m in Sources */,
+				FAEA0F2C1DE8892B00B5BAD9 /* CHAESEncryption.m in Sources */,
+				FAEA0EDB1DE885D300B5BAD9 /* main.m in Sources */,
+				FAEA0F121DE8860400B5BAD9 /* AppDelegate.m in Sources */,
+				FAEA0F291DE8890700B5BAD9 /* NSData+AES256.m in Sources */,
+				FAEA0F1F1DE8879700B5BAD9 /* GTMBase64.m in Sources */,
+				FAEA0F2F1DE8894E00B5BAD9 /* CHRSAEncyyption.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAEA0EEB1DE885D300B5BAD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAEA0EF41DE885D300B5BAD9 /* CHEncryptionHelperDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAEA0EF61DE885D300B5BAD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAEA0EFF1DE885D300B5BAD9 /* CHEncryptionHelperDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAEA0EF11DE885D300B5BAD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAEA0ED51DE885D300B5BAD9 /* CHEncryptionHelperDemo */;
+			targetProxy = FAEA0EF01DE885D300B5BAD9 /* PBXContainerItemProxy */;
+		};
+		FAEA0EFC1DE885D300B5BAD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAEA0ED51DE885D300B5BAD9 /* CHEncryptionHelperDemo */;
+			targetProxy = FAEA0EFB1DE885D300B5BAD9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAEA0EE21DE885D300B5BAD9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAEA0EE31DE885D300B5BAD9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAEA0EE71DE885D300B5BAD9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAEA0EE81DE885D300B5BAD9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAEA0F011DE885D300B5BAD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAEA0F021DE885D300B5BAD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAEA0F041DE885D300B5BAD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CHEncryptionHelperDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chaors.wng.cn.CHEncryptionHelperDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FAEA0F051DE885D300B5BAD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CHEncryptionHelperDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chaors.wng.cn.CHEncryptionHelperDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FAEA0F071DE885D300B5BAD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CHEncryptionHelperDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chaors.wng.cn.CHEncryptionHelperDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CHEncryptionHelperDemo.app/CHEncryptionHelperDemo";
+			};
+			name = Debug;
+		};
+		FAEA0F081DE885D300B5BAD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CHEncryptionHelperDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chaors.wng.cn.CHEncryptionHelperDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CHEncryptionHelperDemo.app/CHEncryptionHelperDemo";
+			};
+			name = Release;
+		};
+		FAEA0F0A1DE885D300B5BAD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CHEncryptionHelperDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chaors.wng.cn.CHEncryptionHelperDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CHEncryptionHelperDemo;
+			};
+			name = Debug;
+		};
+		FAEA0F0B1DE885D300B5BAD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CHEncryptionHelperDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chaors.wng.cn.CHEncryptionHelperDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CHEncryptionHelperDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAEA0ED11DE885D300B5BAD9 /* Build configuration list for PBXProject "CHEncryptionHelperDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAEA0F011DE885D300B5BAD9 /* Debug */,
+				FAEA0F021DE885D300B5BAD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAEA0F031DE885D300B5BAD9 /* Build configuration list for PBXNativeTarget "CHEncryptionHelperDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAEA0F041DE885D300B5BAD9 /* Debug */,
+				FAEA0F051DE885D300B5BAD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FAEA0F061DE885D300B5BAD9 /* Build configuration list for PBXNativeTarget "CHEncryptionHelperDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAEA0F071DE885D300B5BAD9 /* Debug */,
+				FAEA0F081DE885D300B5BAD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FAEA0F091DE885D300B5BAD9 /* Build configuration list for PBXNativeTarget "CHEncryptionHelperDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAEA0F0A1DE885D300B5BAD9 /* Debug */,
+				FAEA0F0B1DE885D300B5BAD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAEA0ECE1DE885D300B5BAD9 /* Project object */;
+}
